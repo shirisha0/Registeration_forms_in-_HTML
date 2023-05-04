@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head><title>
+    r2form
+</title><style>
+table, th, td {
+    border:2px solid black;
+
+  }
+  label{
+        width:100px;
+        color:rgb(19, 3, 3);
+        display: inline-block;
+  }
+  input{
+       border:2px solid #181010;
+       
+  padding: 5px 10px;
+  margin: 5px 0;
+  box-sizing:content-box;
+    }
+    #form{
+        border-radius:100px;
+        color:rgb(17, 16, 16);
+       
+
+        
+    }
+  </style>
+<body>
+    <div id="form">    <form>
+        <fieldset>
+            <h1 style="color: burlywood;">Land of Boxes Order Form</h1>
+        <label>Name</label>
+        <input type="text" id="name" name="name" size="50"><br>
+        <label>Email</label>
+        <input type="email" id="email" name="email" size="50"><br>
+        <label>Address</label>
+        <textarea id="Address" name="Address" rows="4" cols="50"></textarea><br>
+        <label>PostCode</label>
+        <input type="postcode" id="postcode" name="postcode" size="30"><br>
+        <table style="width:100%">
+            <tr>
+                <th>Product</th>
+                <th>Part Name</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+            <td>EconoBox</td>
+            <td>LB100</td>
+            <td>3</td>
+            <td>R5</td>
+            <td>R15</td>
+            </tr>
+            <tr>
+                <td>StandardBox</td>
+                <td>LB200</td>
+                <td>4</td>
+                <td>R10</td>
+                <td>R40</td>
+                </tr>
+                <tr>
+                    <td>PremiumBoxTD</td>
+                    <td>LB300</td>
+                    <td>1</td>
+                    <td>R15</td>
+                    <td>R15</td>
+                    </tr>
+                    <tr>
+                        <td>DehuxeBox</td>
+                        <td>LB400</td>
+                        <td>0</td>
+                        <td>R20</td>
+                        <td> </td>
+                        </tr>
+                        <tr>
+                            <td>Super Deluxe Box/TD</td>
+                            <td>LB500</td>
+                            <td> 1 </td>
+                            <td> R30 </td>
+                            <td> R30 </td>
+                            </tr>
+                            <tr text-align="right">
+                                <td colspan="4"> Total</td>
+                                <td>R100</td>
+
+                            </tr>
+        </table>
+        <h4>Credit Card Details</h4>
+        <h6>Card Type</h6>
+        <input type="radio" id="mastercard" name="mastercard" value="mastercard">
+  <label for="mastercsrd">Mastercard</label><br>
+<input type="radio" id="visa" name="visa" value="visa">
+  <label for="visa">Visa</label> <label>Card Number</label>
+<input type="text" id="cardnumber" name="cardnumber" size="20"><br>
+<input type="radio" id="american" name="american" value="american">
+  <label for="american">American<br>Express</label><label>Expiry date</label>
+<input type="text" id="expiry" name="expiry" size="20"><br>
+<input type="radio" id="diners" name="diners" value="diners">
+  <label for="diners">Diners Club</label><br>
+<label>Delivery Address</label>
+<textarea id="Address" name="Address" rows="4" cols="50"></textarea><br>
+<input type="submit" value="send order">
+<input type="submit" value="Clear form">    
+        </fieldset>
+    </form>
+    </div>
+
+
+</body>
+</html>

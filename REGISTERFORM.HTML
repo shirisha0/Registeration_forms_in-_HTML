@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Title</title>
+<style type="text/css">
+    input{
+       border:2px solid #181010;
+       
+  padding: 5px 10px;
+  margin: 5px 0;
+  box-sizing:content-box;
+    }
+
+     
+    label{
+        width:100px;
+        color:rgb(19, 3, 3);
+        display: inline-block;
+    }
+    #form{
+        border-radius:100px;
+        color:rgb(17, 16, 16);
+       
+
+        
+    }
+    </style>
+
+
+</head>
+<body>
+    <div id="form">
+    
+    <form action="/action_page.php">
+        <fieldset><legend><h1>Trip maintenance</h1></legend>
+        <label for="fname">Trip Name</label>
+        <input type="text" id="fname" name="fname" size="50"><br> 
+        <br>
+        <label for="EventType">Event Type</label>
+        <select name="EventType" id="EventType" style="border: solid;">
+            <option
+            value="surfing">Surfing</option>
+            <option 
+            valur="swimming">swimming</option>
+        <option
+        value="boating">boating</option>
+            </select><br>
+        <label for="tripdescription">Trip Description</label>
+        <textarea id="tripdescription" name="tripdescription" rows="4" cols="50"></textarea><br>
+        <label for="triplocation">Trip Location</label>
+        <input type="text" id="triplocation" name="triplocation"  maxlength="4" size="50" style="border:solid;"><br>
+        <label for="departs">Departs</label>
+        <input type="text" id="departs" name="departs"size="10"><br>
+        <label for="returns">Returns</label>
+        <input type="text" id="returns" name="returns"size="10"><br>
+        <lable for="numberofpeople">Number of people</lable>
+        <input type="text" id="numberofpeople" name="numberofpeople" size="4"><br>
+        <label for="price">Price</label>
+        <input type="text" id="price" name="price" size="10"><br>
+        <label for="basecost">Base Cost</label>
+        <input type="text" id="basecost" name="basecost" size="10"><br>
+        <label for="depositrequired">Deposit Required</label>
+        <input type="checkbox" id="depositrequired" name="depositrequired" ><br>
+        <label for="tripleader">Trip Leader</label>
+        <input type="text" id="tripleader" name="tripleader" size="50"><br>
+        <label for="photofilename">Photo File Name</label>
+        <input type="text" id="photofilename" name="photofilename" size="50"><br>
+        <input type="submit" value="save">
+        <input type="submit" value="cancel">
+
+
+
+</fieldset>
+    </form>
+    </div>
+
+</body>
+</html>
